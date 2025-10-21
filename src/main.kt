@@ -5,9 +5,11 @@ fun main() {
     binnie.walk(100)
     clyde.walk()
     binnie.eat(5)
-    clyde.eat(18)
+    clyde.eat(10)
 
     println(binnie)
     println(clyde)
 }
+
+
 

@@ -5,10 +5,10 @@ class Cat(val name: String, var age: Int, var weight: Int) {
         println("$name is walking for $distance meters.")
         val weightLoss = distance / 50
         weight -= weightLoss
-        if (weight < 1) weight = 1 // Prevents weight dropping too low
+        if (weight < 1) weight = 1 // Prevents negative or zero weight
     }
 
-    // ✅ Modified eat() method with 'amount' parameter
+    // ✅ Updated eat() method to increase weight by 'amount'
     fun eat(amount: Int) {
         if (weight + amount > 20) {
             println("⚠️ Error: $name cannot weigh more than 20. Current weight: $weight.")
@@ -22,3 +22,4 @@ class Cat(val name: String, var age: Int, var weight: Int) {
         return "Name: $name, Age: $age, Weight: $weight"
     }
 }
+
